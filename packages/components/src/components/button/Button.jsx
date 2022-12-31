@@ -1,8 +1,8 @@
 import ButtonCss from "./Button.module.css";
 
-const Button = (props) => (
-  <button className={ButtonCss["federated-button"]} {...props}>
-    {"Federated button"}
+const Button = ({ children, ...rest }) => (
+  <button className={ButtonCss["federated-button"]} {...rest}>
+    {children}
   </button>
 );
 
