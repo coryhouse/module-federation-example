@@ -1,26 +1,21 @@
-![CI](https://github.com/nearform/module-federation-example/actions/workflows/ci.yml/badge.svg?event=push)
+# React Module federation example
 
-# Module federation example
-This repository contains an example of module federation with three different packages, all managed using `pnpm` workspaces.#
+Module federation with three packages, managed using `npm` workspaces.
 
-This is the scenario that has been realized:
+Three packages:
 
 ![Real case scenario](img/scenario.png)
 
-We have a host called application, a bidirectional host called components and a remote called loading.
+1. `application` - Host
+2. `components` - Bidirectional host. Imports the loading component, applies CSS and then re-exposes it. Also, exposes a rounded button.
+3. `loading` - Remote. Exposes a loading component.
 
-In plain english: firstly, the remote will expose a single loading component.  
-Secondly, the bidirectional host will import the loading component, apply some CSS and then re-expose it. Additionally, it exposes a rounded button.  
 Finally, the hll include these two components that will be shown to the user.
 
-## Local development
+## Local dev
 
-To locally run the example, you must:
-- install the dependencies
-```bash
-npm i
+
 ```
-- execute the start script:
-```bash
-npm run start
+npm i
+npm start
 ```
