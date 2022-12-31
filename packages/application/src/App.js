@@ -1,17 +1,17 @@
-import './App.css'
+import "./App.css";
 
-import ColorLoading from 'components/ColorLoading'
-import Button from 'components/Button'
-import { useEffect, useState } from 'react'
+import ColorLoading from "components/ColorLoading";
+import Button from "components/Button";
+import { useEffect, useState } from "react";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     if (isLoading) {
-      setTimeout(() => setIsLoading(false), 3000)
+      setTimeout(() => setIsLoading(false), 3000);
     }
-  }, [isLoading])
+  }, [isLoading]);
 
   return (
     <div className="App">
@@ -22,7 +22,7 @@ function App() {
         </div>
       </header>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

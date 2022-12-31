@@ -14,7 +14,6 @@ Finally, the hll include these two components that will be shown to the user.
 
 ## Local dev
 
-
 ```
 npm i
 npm start

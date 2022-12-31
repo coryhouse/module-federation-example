@@ -1,9 +1,9 @@
-import ButtonCss from './Button.module.css'
+import ButtonCss from "./Button.module.css";
 
-const Button = props => (
-  <button className={ButtonCss['federated-button']} {...props}>
-    {'Federated button'}
+const Button = (props) => (
+  <button className={ButtonCss["federated-button"]} {...props}>
+    {"Federated button"}
   </button>
-)
+);
 
-export default Button
+export default Button;
