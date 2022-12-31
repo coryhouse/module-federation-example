@@ -6,11 +6,9 @@ Three packages:
 
 ![Real case scenario](img/scenario.png)
 
-1. `application` - Host
+1. `application` - Host. Composes the 2 packages below.
 2. `components` - Bidirectional host. Imports the loading component, applies CSS and then re-exposes it. Also, exposes a rounded button.
 3. `loading` - Remote. Exposes a loading component.
-
-Finally, the hll include these two components that will be shown to the user.
 
 ## Local dev
 
